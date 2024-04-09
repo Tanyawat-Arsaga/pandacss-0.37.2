@@ -1,0 +1,11 @@
+---
+import { Markdown } from "~/components/markdown/Markdown";
+import { MARKDOWN_TEST } from "~/constants/markdown-test";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export const prerender = false;
+---
+
+<BaseLayout>
+  <Markdown content={MARKDOWN_TEST} />
+</BaseLayout>
